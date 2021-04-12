@@ -39,5 +39,4 @@ public class JavaFxApplication extends Application {
         this.applicationContext.close();
         Platform.exit();
     }
-
 }
