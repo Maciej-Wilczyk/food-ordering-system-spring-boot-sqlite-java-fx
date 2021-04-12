@@ -13,27 +13,27 @@
                 <Font size="36.0" />
             </font>
         </Label>
-        <TableView fx:id="lunchTable" layoutX="266.0" layoutY="155.0" prefHeight="200.0" prefWidth="327.0">
+        <TableView fx:id="lunchTable" layoutX="255.0" layoutY="155.0" prefHeight="200.0" prefWidth="348.0">
             <columns>
                 <TableColumn fx:id="mainCurse" prefWidth="114.0" text="Main Curse" />
                 <TableColumn fx:id="dessert" prefWidth="146.0" text="Dessert" />
-                <TableColumn fx:id="lunchPrice" minWidth="0.0" prefWidth="66.0" text="Price" />
+                <TableColumn fx:id="lunchPrice" minWidth="0.0" prefWidth="87.0" text="Price" />
             </columns>
         </TableView>
-        <TableView fx:id="drinkTable" layoutX="329.0" layoutY="414.0" prefHeight="200.0" prefWidth="200.0">
+        <TableView fx:id="drinkTable" layoutX="313.0" layoutY="414.0" prefHeight="200.0" prefWidth="233.0">
             <columns>
-                <TableColumn prefWidth="102.0" text="Drink" />
-                <TableColumn prefWidth="97.0" text="Price" />
+                <TableColumn fx:id="drink" prefWidth="124.0" text="Drink" />
+                <TableColumn fx:id="drinkPrice" prefWidth="108.0" text="Price" />
             </columns>
         </TableView>
-        <TableView fx:id="orderTable" layoutX="231.0" layoutY="744.0" prefHeight="200.0" prefWidth="441.0">
+        <TableView fx:id="orderTable" layoutX="209.0" layoutY="744.0" prefHeight="200.0" prefWidth="441.0">
             <columns>
-                <TableColumn prefWidth="75.0" text="Main Curse" />
-                <TableColumn prefWidth="75.0" text="Dessert" />
-                <TableColumn prefWidth="75.0" text="Drink" />
-                <TableColumn prefWidth="57.0" text="Ice" />
-                <TableColumn prefWidth="75.0" text="Lemon" />
-                <TableColumn prefWidth="83.0" text="Price" />
+                <TableColumn fx:id="mainCurseO" prefWidth="75.0" text="Main Curse" />
+                <TableColumn fx:id="dessertO" prefWidth="75.0" text="Dessert" />
+                <TableColumn fx:id="drinkO" prefWidth="75.0" text="Drink" />
+                <TableColumn fx:id="iceO" prefWidth="57.0" text="Ice" />
+                <TableColumn fx:id="lemonO" prefWidth="75.0" text="Lemon" />
+                <TableColumn fx:id="priceO" prefWidth="83.0" text="Price" />
             </columns>
         </TableView>
         <ChoiceBox fx:id="choiceBox" layoutX="651.0" layoutY="155.0" onAction="#setLunchData" prefWidth="150.0">
@@ -50,24 +50,28 @@
                 <Font size="18.0" />
             </font>
         </Label>
-        <CheckBox layoutX="651.0" layoutY="414.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="96.0" text="Ice" />
-        <CheckBox layoutX="651.0" layoutY="469.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="96.0" text="Lemon" />
-        <Button layoutX="214.0" layoutY="647.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="574.0" text="Add to order" />
-        <Button layoutX="726.0" layoutY="798.0" mnemonicParsing="false" onAction="#foo" prefHeight="93.0" prefWidth="150.0" text="Order" />
-        <Label layoutX="396.0" layoutY="112.0" text="Lunches">
+        <CheckBox fx:id="iceCheckBox" layoutX="651.0" layoutY="414.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="96.0" text="Ice" />
+        <CheckBox fx:id="lemonCheckBox" layoutX="651.0" layoutY="455.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="96.0" text="Lemon" />
+        <Button layoutX="142.0" layoutY="636.0" mnemonicParsing="false" onAction="#addOrder" prefHeight="53.0" prefWidth="574.0" text="Add to order" />
+        <Button layoutX="727.0" layoutY="851.0" mnemonicParsing="false" onAction="#summary" prefHeight="93.0" prefWidth="150.0" text="Finish Order">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+        <Label layoutX="397.0" layoutY="114.0" text="Lunches">
             <font>
                 <Font size="18.0" />
             </font>
         </Label>
-        <Label layoutX="403.0" layoutY="372.0" text="Drinks">
+        <Label layoutX="403.0" layoutY="373.0" text="Drinks">
             <font>
                 <Font size="18.0" />
             </font>
         </Label>
-        <Label layoutX="405.0" layoutY="709.0" text="Order">
+        <Label layoutX="406.0" layoutY="709.0" text="Order">
             <font>
                 <Font size="18.0" />
             </font>
         </Label>
+      <Button layoutX="726.0" layoutY="768.0" mnemonicParsing="false" onAction="#deleteOrder" prefHeight="63.0" prefWidth="150.0" text="Delete Selected Row" />
     </children>
 </AnchorPane>

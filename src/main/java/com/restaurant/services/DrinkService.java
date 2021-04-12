@@ -1,12 +1,9 @@
 package com.restaurant.services;
 
 import com.restaurant.drinks.Drink;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
 import java.util.List;
 
-
 public interface DrinkService {
+    Drink add(Drink drink);
     List<Drink> getAll();
 }

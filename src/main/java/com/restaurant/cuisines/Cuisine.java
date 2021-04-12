@@ -1,13 +1,10 @@
 package com.restaurant.cuisines;
 
 import lombok.Data;
-import org.hibernate.annotations.GeneratorType;
-
 import javax.persistence.*;
 
 
 @Entity
-//@MappedSuperclass
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @Data
 public class Cuisine  {
