@@ -240,7 +240,7 @@ public class WindowController implements Initializable {
         }
 
         if(drinkTable.getSelectionModel().getSelectedItem() == null){
-            drink = drinkTable.getSelectionModel().getSelectedItem().getDrink();
+            drink = "-";
             drinkPrice = 0.;
         }
         else {
