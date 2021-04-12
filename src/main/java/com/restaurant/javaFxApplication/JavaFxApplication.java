@@ -1,6 +1,7 @@
-package com.restaurant;
+package com.restaurant.javaFxApplication;
 
 
+import com.restaurant.RestaurantApplication;
 import com.restaurant.controller.WindowController;
 import javafx.application.Application;
 import javafx.application.Platform;
